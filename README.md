@@ -15,7 +15,8 @@ The process:
    * %replace(%replace(%msg){ old regex expression JSON or for toString , old replacing placeholders }){ new regex expression, new replacing placeholders }
    * Your keep cutting your ENTIRE CURRENT %replace and nest it within another %replace's C brackets as below, if you need to keep adding, as below.
    * %replace(%replace(%replace(%msg){ old regex expression JSON or for toString , old replacing placeholders }){ new regex expression, new replacing placeholders }){newest regex expression, newest replacing placeholders}
-4. Use regex101.com to create, test and verify you regex expressions.
+NB*. Use https://www.regex101.com to create, test and verify your regex expressions.
+NB*. You may refer to this youtube video for steps https://www.youtube.com/watch?v=3YK6UZq_51E
 
 
 The replace expression, Example:
