@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+
+<!--	==============================-->
+<!--	THIS IS FOR CONSOLE LOG-->
+<!--	==============================-->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+			<layout	class="ch.qos.logback.classic.PatternLayout">
+				<pattern>
+					%d{dd/MM/yyyy HH:mm:ss.SSS} [%thread] %-5level %logger-- %replace(%replace(%replace(%replace(%msg){((?i)\"\bpassword\b(\":\w*))\"[^\"]+\", $1"*******" }){((?i)\bpassword\b(=)\w*), "password=*******"}){((?i)"\bcreditCard\b(":\w*))"[^"]+", $1"*******"}){((?i)\bcreditCard\b(=)\w*), "creditCard=*******"} %n%ex
+				</pattern>
+			</layout>
+		</encoder>
+	</appender>
+
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</Configuration>
